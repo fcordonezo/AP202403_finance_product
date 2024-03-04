@@ -12,6 +12,7 @@ public class FinanceServiceEntityMapper {
       .financeServiceId(entity.getFinanceServiceId())
       .code(entity.getCode())
       .description(entity.getDescription())
+      .ruleSet(entity.getRuleSet())
       .build();
   }
   public FinanceServiceEntity toFinanceServiceEntity(FinanceService financeService) {
@@ -19,6 +20,7 @@ public class FinanceServiceEntityMapper {
       .financeServiceId(financeService.financeServiceId())
       .code(financeService.code())
       .description(financeService.description())
+      .ruleSet(financeService.ruleSet())
       .build();
   }
 }

@@ -21,4 +21,7 @@ public class FinanceServiceEntity {
   @Column(name = "description")
   private String description;
 
+  @Column(name = "rule_set")
+  private String ruleSet;
+
 }

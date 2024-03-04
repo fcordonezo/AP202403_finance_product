@@ -5,6 +5,7 @@ import lombok.Builder;
 @Builder
 public record FinanceServiceRequestDto(
   String code,
-  String description
+  String description,
+  String ruleSet
 ) {
 }

@@ -6,6 +6,7 @@ import lombok.Builder;
 public record FinanceService(
   Long financeServiceId,
   String code,
-  String description
+  String description,
+  String ruleSet
 ) {
 }
