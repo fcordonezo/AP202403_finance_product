@@ -23,4 +23,13 @@ public class FinanceServiceEntityMapper {
       .ruleSet(financeService.ruleSet())
       .build();
   }
+
+  public FinanceService addFinanceServiceId(FinanceService financeService, Long FinanceServiceId) {
+    return FinanceService.builder()
+      .financeServiceId(FinanceServiceId)
+      .code(financeService.code())
+      .description(financeService.description())
+      .ruleSet(financeService.ruleSet())
+      .build();
+  }
 }

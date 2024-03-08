@@ -41,12 +41,23 @@ public class FinanceServiceJpaAdapter implements FinanceServicePersistencePort {
   }
 
   @Override
-  public FinanceService save(FinanceService financeService) {
-    return null;
+  public FinanceService create(FinanceService financeService) {
+    return financeServiceEntityMapper.toFinanceService(financeServiceRepository.save(financeServiceEntityMapper.toFinanceServiceEntity(financeService)));
   }
 
   @Override
-  public void delete(FinanceService financeService) {
+  public FinanceService update(FinanceService financeService, Long financeServiceId) {
+    return this.financeServiceEntityMapper.toFinanceService(
+      financeServiceRepository.save(
+        financeServiceEntityMapper.toFinanceServiceEntity(
+          financeServiceEntityMapper.addFinanceServiceId(financeService, financeServiceId)
+        )
+      )
+    );
+  }
 
+  @Override
+  public void delete(Long financeServiceId) {
+    financeServiceRepository.deleteById(financeServiceId);
   }
 }

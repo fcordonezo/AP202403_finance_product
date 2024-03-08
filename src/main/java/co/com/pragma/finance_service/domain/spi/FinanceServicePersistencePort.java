@@ -7,6 +7,7 @@ import java.util.List;
 public interface FinanceServicePersistencePort {
   List<FinanceService> findAll();
   FinanceService findById(Long idCustomer);
-  FinanceService save(FinanceService financeService);
-  void delete(FinanceService financeService);
+  FinanceService create(FinanceService financeService);
+  FinanceService update(FinanceService financeService, Long financeServiceId);
+  void delete(Long financeServiceId);
 }
