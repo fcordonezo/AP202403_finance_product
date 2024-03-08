@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>co.com.pragma</groupId>
-	<artifactId>finance_service</artifactId>
+	<artifactId>finance_product</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>finance_service</name>
-	<description>Assesment Pragma Marzo 2024: Servicio financiero</description>
+	<name>finance_product</name>
+	<description>Assesment Pragma Marzo 2024: Producto financiero</description>
 	<properties>
 		<java.version>21</java.version>
 		<org.mapstruct.version>1.5.5.Final</org.mapstruct.version>

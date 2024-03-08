@@ -1,10 +1,10 @@
-package co.com.pragma.finance_service;
+package co.com.pragma.finance_product;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FinanceServiceApplicationTests {
+class FinanceProductApplicationTests {
 
 	@Test
 	void contextLoads() {
