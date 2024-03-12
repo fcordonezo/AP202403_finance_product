@@ -6,6 +6,8 @@ El **microservicio** llamado ***Producto Financiero (finance-product)*** es el e
 de almacenar la información correspondiente a los productos financieros especificados
 en el problema propuesto
 
+### Host: localhost
+### Port: 8080
 ### Path: /api/development/v1/finance-service/decision-products
 
 ## Aspectos técnicos
