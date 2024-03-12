@@ -121,6 +121,7 @@ que son parte del string*
 | ```TAM``` | ```Tarjeta amparada```   | ```{"countries": [], "minAge": 15,"minIncome": 0.0}```                      |
 
 ### Contrato Openapi 3.0.1
+La firma puede ser encontrada en **[esta página](https://fcordonezo.github.io/AP202403_finance_product/)**
 ``` yaml
 openapi: 3.0.1
 info:
